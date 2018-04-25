@@ -1,0 +1,31 @@
+{
+  "name": "geekfinder",
+  "version": "1.0.0",
+  "description": "An app to help find geeky friends",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiriusScaper/GeekFinder.git"
+  },
+  "keywords": [
+    "geek",
+    "javascript",
+    "express",
+    "friend"
+  ],
+  "author": "R. Uselmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiriusScaper/GeekFinder/issues"
+  },
+  "homepage": "https://github.com/SiriusScaper/GeekFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
