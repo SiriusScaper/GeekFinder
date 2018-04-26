@@ -4,24 +4,25 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 //=================
 //  Express setup //
 //=================
 
 const app = express();
-
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3800;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(bodyParser.text());
 
 //=================
 //      Router   //
 //=================
 
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+require('./app/routing/apiRoutes')(app);
+require('./app/routing/htmlRoutes')(app);
 
 //=================
 //    Listener   //

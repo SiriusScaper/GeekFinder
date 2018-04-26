@@ -11,7 +11,12 @@
 		"type": "git",
 		"url": "git+https://github.com/SiriusScaper/GeekFinder.git"
 	},
-	"keywords": ["geek", "javascript", "express", "friend"],
+	"keywords": [
+		"geek",
+		"javascript",
+		"express",
+		"friend"
+	],
 	"author": "R. Uselmann",
 	"license": "ISC",
 	"bugs": {
@@ -20,6 +25,7 @@
 	"homepage": "https://github.com/SiriusScaper/GeekFinder#readme",
 	"dependencies": {
 		"body-parser": "^1.18.2",
-		"express": "^4.16.3"
+		"express": "^4.16.3",
+		"materialize-css": "^0.100.2"
 	}
 }
