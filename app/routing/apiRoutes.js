@@ -21,10 +21,10 @@ module.exports = app => {
 		const bestMatch = 0;
 
 		//runs through all current friends in list
-		for (var i = 0; i < geeks.length; i++) {
-			var scoresDiff = 0;
+		for (let i = 0; i < geeks.length; i++) {
+			let scoresDiff = 0;
 			//run through scores to compare friends
-			for (var j = 0; j < newFriendScores.length; j++) {
+			for (let j = 0; j < newFriendScores.length; j++) {
 				scoresDiff += Math.abs(
 					parseInt(geeks[i].scores[j]) - parseInt(newFriendScores[j])
 				);
@@ -35,7 +35,7 @@ module.exports = app => {
 		}
 
 		//after all friends are compared, find best match
-		for (var i = 0; i < scoresArray.length; i++) {
+		for (let i = 0; i < scoresArray.length; i++) {
 			if (scoresArray[i] <= scoresArray[bestMatch]) {
 				bestMatch = i;
 			}
